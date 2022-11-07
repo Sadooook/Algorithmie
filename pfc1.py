@@ -19,6 +19,7 @@ class Game:
     def score_display(self):
         self.p1.score()
         self.p2.score()
+     
         
 
     def gagnant(self, jeu1, jeu2):
@@ -28,7 +29,7 @@ class Game:
         while self.p1.point < self.parties and self.p2.point < self.parties:
             self.manche()
             self.score_display()
-        
+                 
 class player:
     def __init__(self, name):
         self.name = name
