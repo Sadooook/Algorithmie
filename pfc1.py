@@ -2,7 +2,7 @@ import random
 
 class Game:
     def __init__(self):
-        self.parties = int(input("Combien de manche voulez vous jouer ? : \n"))
+        self.parties = int(input("Combien de manches voulez vous jouer ? : \n"))
         self.p1 = player(input("Entrez votre pseudo (premier joueur) : \n"))
         self.p2 = player(input("Entrez votre pseudo (deuxième joueur ou bot pour bot) : \n"))
         self.possibilites = self.p1.possibilites
